@@ -22,7 +22,7 @@ let params = useParams();
 let {addToCart} = useContext(Cartcontext)
   const[productsDetails,setProductDetails]=useState(null );
   async function getproductDetails(id){
-      let {data} =await axios.get(`https://route-ecommerce.onrender.com/api/v1/products/${id}`)
+      let {data} =await axios.get(`https://ecommerce.routemisr.com/api/v1/products/${id}`)
       setProductDetails(data.data);
      console.log(data.data);
     }

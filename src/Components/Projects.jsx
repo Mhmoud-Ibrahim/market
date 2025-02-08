@@ -4,12 +4,7 @@ import { Link } from "react-router-dom";
 import Typewriter from "./Typewriter";
 import ecomercy from '../assets/img/project-picture/E-comercy2.jpg'
 import weather from '../assets/img/project-picture/weather.jpg'
-import game from '../assets/img/project-picture/Game.jpg'
 import Trending from '../assets/img/project-picture/Trending.jpg'
-import meals from '../assets/img/project-picture/meals.jpg'
-import xogame from '../assets/img/project-picture/XO.jpg'
-import yummy2 from '../assets/img/project-picture/yummy2.jpg'
-import CRUD from '../assets/img/project-picture/Doctor.jpg'
 import Aos from "aos"
 import "aos/dist/aos.css"
 import { useEffect } from "react";

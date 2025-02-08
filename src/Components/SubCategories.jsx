@@ -20,7 +20,7 @@ export default function SubCategories() {
 
   const[subcategories,setsubcategories]=useState(null );
   async function getsubcategories(id){
-      let {data} =await axios.get(`https://route-ecommerce.onrender.com/api/v1/subcategories/${id}`)
+      let {data} =await axios.get(`https://ecommerce.routemisr.com/api/v1/subcategories/${id}`)
       setsubcategories(data.data);
      console.log(data);
     }
