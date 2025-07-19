@@ -24,7 +24,7 @@ export default function Products() {
   return <>
    <Helmet>
   <meta charSet="utf-8" />
-    <title>   Home</title>
+    <title>Home</title>
   </Helmet>
   {loading? <Loading/>:
    <div className="container mt-3 p-0 mt-0">
@@ -32,6 +32,7 @@ export default function Products() {
     {products?.map((product,index)=>
   <div key={index} className="col-md-2 text-center" >
     <Link to={`/ProductDetails/${product._id}`} >
+    
    <div data-aos="fade-right"   className="items  p-0 shadow border border-1 border-black rounded-1  ">
    <img height={150}  className='w-100 img-fluid'  src={product?.imageCover} alt="product" />
    <div className="details px-1 py-3 ">

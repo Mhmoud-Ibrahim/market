@@ -12,7 +12,7 @@ export default function Categories() {
     const[products,setProducts]=useState([]);
     async function getfeaturedproducts(){
       setLoading(true)
-        let {data} =await axios.get(`https://ecommerce.routemisr.com/api/v1/categories`)
+        let {data} =await axios.get(`https://ecommerce.routemisr.com/api/v1/categoriesn`)
         setProducts(data.data);
         setLoading(false)
       }

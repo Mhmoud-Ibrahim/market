@@ -39,7 +39,8 @@ export default function FeaturedProduct() {
     <div className="row allProducts g-2"> 
     {products?.map((product)=>
   <div key={product._id} className="col-md-2 text-center" >
-   <div data-aos="fade-right"   className="items cursor-pointer  p-0 shadow border border-1 border-black rounded-1  ">
+   <div data-aos="fade-right"  
+    className="items cursor-pointer  p-0 shadow border border-1 border-black rounded-1  ">
     <Link to={`/ProductDetails/${product._id}`} >
    <img height={150}  className='w-100 img-fluid' loading="lazy" src={product?.imageCover} alt="product" />
    <div className="details px-1 py-3 ">

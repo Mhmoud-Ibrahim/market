@@ -2,6 +2,7 @@ import { useFormik } from "formik";
 import { useContext, useState } from "react";
 import { Helmet } from "react-helmet";
 import { Cartcontext } from "../Context/CartContext";
+import { Navigate } from "react-router-dom";
 
 export default function CheckOut() {
  let {onlinePayment,cartID} =useContext(Cartcontext)
@@ -9,7 +10,7 @@ const[loading,setLoading]=useState(false)
     async function handlsubmit(values){
       setLoading(true)
         let response =await onlinePayment(cartID,values)
-    console.log(response);
+   
         if(response?.data?.status === "success"){
           window.location.href = response.data.session.url
           setLoading(false)

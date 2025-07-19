@@ -24,7 +24,8 @@ function App() {
  
   let routers=createHashRouter([
     {path:'',element:<Layout/>,children:[
-      {index:true,element: <ProtectedRoute><Home/></ProtectedRoute> },
+      {index:true,element: <Home/> },
+      {path:'/',element:<Home/>},
       {path:'home',element:<Home/>},
       {path:'products/:id?',element:<ProtectedRoute><Products/></ProtectedRoute> },
       {path:'productdetails/:id?',element:<ProductDetails/>},
